@@ -1,5 +1,5 @@
 "use client";
-import OdometerText from "@/components/odometer-text";
+
 import { Hammer } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -16,7 +16,7 @@ export default function UnderConstruction() {
   useEffect(() => {
     const interval = setInterval(() => {
       setRotated((prev) => !prev);
-    }, 500); // 800 milliseconds = 0.8 seconds
+    }, 800); // 800 milliseconds = 0.8 seconds
 
     return () => clearInterval(interval); // Cleanup the interval
   }, []);
@@ -24,7 +24,7 @@ export default function UnderConstruction() {
   useEffect(() => {
     // const targetDate = new Date("2024-12-31T23:59:59Z").getTime();
 
-    const targetDate = new Date("2024-07-18T00:00:00Z").getTime();
+    const targetDate = new Date("2024-08-18T00:00:00Z").getTime();
     const updateCountdown = () => {
       const now = new Date().getTime();
       const distance = targetDate - now;
@@ -68,38 +68,25 @@ export default function UnderConstruction() {
         <div className="flex items-center justify-center space-x-2">
           <div className="flex flex-col items-center">
             <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
-              <OdometerText
-                value={timeLeft.days}
-                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
-              />
+              {timeLeft.days}
             </div>
             <div className="text-gray-600 dark:text-gray-400">Days</div>
           </div>
           <div className="flex flex-col items-center">
             <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
-              <OdometerText
-                value={timeLeft.hours}
-                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
-              />
+              {timeLeft.hours}
             </div>
             <div className="text-gray-600 dark:text-gray-400">Hours</div>
           </div>
           <div className="flex flex-col items-center">
             <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
-              <OdometerText
-                value={timeLeft.minutes}
-                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
-              />
+              {timeLeft.minutes}
             </div>
             <div className="text-gray-600 dark:text-gray-400">Minutes</div>
           </div>
           <div className="flex flex-col items-center">
             <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
-              <OdometerText
-                value={timeLeft.seconds}
-                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
-              />
-              {/* {timeLeft.seconds} */}
+              {timeLeft.seconds}
             </div>
             <div className="text-gray-600 dark:text-gray-400">Seconds</div>
           </div>
@@ -112,3 +99,43 @@ export default function UnderConstruction() {
     </div>
   );
 }
+
+// <div className="flex items-center justify-center space-x-2">
+// <div className="flex flex-col items-center">
+//   <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+//     <OdometerText
+//       value={timeLeft.days}
+//       className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+//     />
+//   </div>
+//   <div className="text-gray-600 dark:text-gray-400">Days</div>
+// </div>
+// <div className="flex flex-col items-center">
+//   <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+//     <OdometerText
+//       value={timeLeft.hours}
+//       className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+//     />
+//   </div>
+//   <div className="text-gray-600 dark:text-gray-400">Hours</div>
+// </div>
+// <div className="flex flex-col items-center">
+//   <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+//     <OdometerText
+//       value={timeLeft.minutes}
+//       className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+//     />
+//   </div>
+//   <div className="text-gray-600 dark:text-gray-400">Minutes</div>
+// </div>
+// <div className="flex flex-col items-center">
+//   <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+//     <OdometerText
+//       value={timeLeft.seconds}
+//       className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+//     />
+//     {/* {timeLeft.seconds} */}
+//   </div>
+//   <div className="text-gray-600 dark:text-gray-400">Seconds</div>
+// </div>
+// </div>
