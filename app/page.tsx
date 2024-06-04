@@ -24,7 +24,7 @@ export default function UnderConstruction() {
   useEffect(() => {
     // const targetDate = new Date("2024-12-31T23:59:59Z").getTime();
 
-    const targetDate = new Date("2024-08-18T00:00:00Z").getTime();
+    const targetDate = new Date("2024-07-18T00:00:00Z").getTime();
     const updateCountdown = () => {
       const now = new Date().getTime();
       const distance = targetDate - now;
