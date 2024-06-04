@@ -16,6 +16,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://github.hubspot.com/odometer/themes/odometer-theme-minimal.css"
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

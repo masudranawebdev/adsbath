@@ -1,18 +1,51 @@
 "use client";
 
+"use client";
+
+import OdometerText from "@/components/odometer-text";
 import { Hammer } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function UnderConstruction() {
   const [rotated, setRotated] = useState(false);
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
       setRotated((prev) => !prev);
-    }, 800); // 3000 milliseconds = 3 seconds
+    }, 500); // 800 milliseconds = 0.8 seconds
 
     return () => clearInterval(interval); // Cleanup the interval
+  }, []);
+
+  useEffect(() => {
+    // const targetDate = new Date("2024-12-31T23:59:59Z").getTime();
+
+    const targetDate = new Date("2024-07-18T00:00:00Z").getTime();
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      setTimeLeft({ days, hours, minutes, seconds });
+    };
+
+    updateCountdown();
+    const countdownInterval = setInterval(updateCountdown, 1000);
+
+    return () => clearInterval(countdownInterval); // Cleanup the interval
   }, []);
 
   return (
@@ -34,6 +67,46 @@ export default function UnderConstruction() {
           Our new page is currently being built. <br />
           Exciting updates are on the way for Adsbath!
         </p>
+
+        <div className="flex items-center justify-center space-x-2">
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+              <OdometerText
+                value={timeLeft.days}
+                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+              />
+            </div>
+            <div className="text-gray-600 dark:text-gray-400">Days</div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+              <OdometerText
+                value={timeLeft.hours}
+                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+              />
+            </div>
+            <div className="text-gray-600 dark:text-gray-400">Hours</div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+              <OdometerText
+                value={timeLeft.minutes}
+                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+              />
+            </div>
+            <div className="text-gray-600 dark:text-gray-400">Minutes</div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+              <OdometerText
+                value={timeLeft.seconds}
+                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+              />
+              {/* {timeLeft.seconds} */}
+            </div>
+            <div className="text-gray-600 dark:text-gray-400">Seconds</div>
+          </div>
+        </div>
 
         <Link href="/adsbath" className="text-blue-500 hover:underline">
           Go back to Adsbath
