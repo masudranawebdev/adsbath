@@ -10,7 +10,7 @@ export default function UnderConstruction() {
   useEffect(() => {
     const interval = setInterval(() => {
       setRotated((prev) => !prev);
-    }, 1000); // 3000 milliseconds = 3 seconds
+    }, 800); // 3000 milliseconds = 3 seconds
 
     return () => clearInterval(interval); // Cleanup the interval
   }, []);
@@ -21,9 +21,12 @@ export default function UnderConstruction() {
         <Hammer
           size={72}
           className={`transition-transform duration-1000 ${
-            rotated ? "rotate-45" : "rotate-0"
+            rotated
+              ? "origin-bottom-left rotate-45"
+              : "origin-bottom-left rotate-0"
           }`}
         />
+
         <h1 className="text-4xl font-bold leading-tight">
           Under Construction 🚧
         </h1>
