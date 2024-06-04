@@ -34,6 +34,7 @@ export default function UnderConstruction() {
           Our new page is currently being built. <br />
           Exciting updates are on the way for Adsbath!
         </p>
+
         <Link href="/adsbath" className="text-blue-500 hover:underline">
           Go back to Adsbath
         </Link>
