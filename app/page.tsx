@@ -22,7 +22,7 @@ export default function UnderConstruction() {
   useEffect(() => {
     const interval = setInterval(() => {
       setRotated((prev) => !prev);
-    }, 275); // 800 milliseconds = 0.8 seconds
+    }, 500); // 800 milliseconds = 0.8 seconds
 
     return () => clearInterval(interval); // Cleanup the interval
   }, []);
@@ -69,35 +69,11 @@ export default function UnderConstruction() {
         <p className="text-center text-muted-foreground">
           Our new page is currently being built. <br />
           Exciting updates are on the way for{" "}
-          <span className="font-bold">Adsbath!</span>
+          <Link href="/adsbath" className="font-bold hover:border-b">
+            Adsbath!
+          </Link>
         </p>
 
-        {/* <div className="flex items-center justify-center space-x-2">
-          <div className="flex flex-col items-center">
-            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
-              {timeLeft.days}
-            </div>
-            <div className="text-gray-600 dark:text-gray-400">Days</div>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
-              {timeLeft.hours}
-            </div>
-            <div className="text-gray-600 dark:text-gray-400">Hours</div>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
-              {timeLeft.minutes}
-            </div>
-            <div className="text-gray-600 dark:text-gray-400">Minutes</div>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
-              {timeLeft.seconds}
-            </div>
-            <div className="text-gray-600 dark:text-gray-400">Seconds</div>
-          </div>
-        </div> */}
         <div className="flex items-center justify-center space-x-2">
           <div className="flex flex-col items-center">
             <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
@@ -137,10 +113,6 @@ export default function UnderConstruction() {
             <div className="text-gray-600 dark:text-gray-400">Seconds</div>
           </div>
         </div>
-
-        <Link href="/adsbath" className="text-blue-500 hover:underline">
-          Go back to Adsbath
-        </Link>
       </div>
     </div>
   );

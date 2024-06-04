@@ -24,7 +24,7 @@ const OdometerText = ({
       <Odometer
         className={cn("text-xl", className)}
         value={value}
-        duration={2000}
+        duration={255}
         format="(,ddd).dd"
         theme="minimal"
       />
