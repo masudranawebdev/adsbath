@@ -1,8 +1,14 @@
 "use client";
 
 import { Hammer } from "lucide-react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+// Dynamically import OdometerText component with ssr: false
+const OdometerText = dynamic(() => import("@/components/odometer-text"), {
+  ssr: false,
+});
 
 export default function UnderConstruction() {
   const [rotated, setRotated] = useState(false);
@@ -62,10 +68,11 @@ export default function UnderConstruction() {
         </h1>
         <p className="text-center text-muted-foreground">
           Our new page is currently being built. <br />
-          Exciting updates are on the way for <span className="font-bold">Adsbath!</span>
+          Exciting updates are on the way for{" "}
+          <span className="font-bold">Adsbath!</span>
         </p>
 
-        <div className="flex items-center justify-center space-x-2">
+        {/* <div className="flex items-center justify-center space-x-2">
           <div className="flex flex-col items-center">
             <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
               {timeLeft.days}
@@ -87,6 +94,45 @@ export default function UnderConstruction() {
           <div className="flex flex-col items-center">
             <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
               {timeLeft.seconds}
+            </div>
+            <div className="text-gray-600 dark:text-gray-400">Seconds</div>
+          </div>
+        </div> */}
+        <div className="flex items-center justify-center space-x-2">
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+              <OdometerText
+                value={timeLeft.days}
+                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+              />
+            </div>
+            <div className="text-gray-600 dark:text-gray-400">Days</div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+              <OdometerText
+                value={timeLeft.hours}
+                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+              />
+            </div>
+            <div className="text-gray-600 dark:text-gray-400">Hours</div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+              <OdometerText
+                value={timeLeft.minutes}
+                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+              />
+            </div>
+            <div className="text-gray-600 dark:text-gray-400">Minutes</div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-gray-800 dark:text-gray-200">
+              <OdometerText
+                value={timeLeft.seconds}
+                className="text-4xl font-bold text-gray-800 dark:text-gray-200"
+              />
+              {/* {timeLeft.seconds} */}
             </div>
             <div className="text-gray-600 dark:text-gray-400">Seconds</div>
           </div>
