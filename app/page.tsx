@@ -62,7 +62,7 @@ export default function UnderConstruction() {
         </h1>
         <p className="text-center text-muted-foreground">
           Our new page is currently being built. <br />
-          Exciting updates are on the way for Adsbath!
+          Exciting updates are on the way for <span className="font-bold">Adsbath!</span>
         </p>
 
         <div className="flex items-center justify-center space-x-2">
