@@ -1,7 +1,4 @@
 "use client";
-
-"use client";
-
 import OdometerText from "@/components/odometer-text";
 import { Hammer } from "lucide-react";
 import Link from "next/link";
