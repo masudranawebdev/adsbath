@@ -16,7 +16,7 @@ export default function UnderConstruction() {
   useEffect(() => {
     const interval = setInterval(() => {
       setRotated((prev) => !prev);
-    }, 800); // 800 milliseconds = 0.8 seconds
+    }, 500); // 800 milliseconds = 0.8 seconds
 
     return () => clearInterval(interval); // Cleanup the interval
   }, []);
