@@ -29,7 +29,7 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`md:flex md:items-center  ${
+        className={`md:flex md:items-center sm:max-h-80 lg:max-h-0  ${
           isMenuOpen ? "block" : "hidden"
         } md:block`}
       >
@@ -51,7 +51,7 @@ const Navbar = () => {
         <li className="my-6 md:my-0 mx-3 cursor-pointer hover:text-cyan-300 duration-500">
           Contact Us
         </li>
-        <button className="mx-0 md:mx-10 cursor-pointer uppercase h-[56px] w-[280px] rounded-lg bg-gradient-to-r from-blue-600 to-pink-600 text-white flex items-center justify-center">
+        <button className="mx-0 md:mx-10 cursor-pointer uppercase h-[60px] sm:h-[48px] w-[280px] rounded-lg bg-gradient-to-r from-blue-600 to-pink-600 text-white ">
           get free consultation
         </button>
       </ul>
