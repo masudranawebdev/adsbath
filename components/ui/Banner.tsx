@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import banner from "../../assets/AdsBath/business.png";
+import banner from "../../assets/AdsBath/main.png";
 import { PiArrowCircleUpRight } from "react-icons/pi";
 
 const Banner = () => {
@@ -26,7 +26,7 @@ const Banner = () => {
             <p className="lg:w-[600px] md:w-[350px] w-[350px] lg:my-6 md:my-3 lg:ml-0 ml-0 md:ml-40 lg:text-lg text-sm">
               help you to build website company this is modern. user friendly.
             </p>
-            <button className="bg-[#fff] lg:ml-0 ml-0 md:ml-52 w-full sm:w-48 md:w-56 lg:w-64 xl:w-72 h-12 font-semibold rounded-full uppercase text-black my-4 flex items-center justify-center space-x-2">
+            <button className="bg-[#fff] lg:ml-0 ml-0 md:ml-52 w-full sm:w-48 md:w-56 lg:w-64 xl:w-48 h-12 font-semibold rounded-full uppercase text-black my-4 flex items-center justify-center space-x-2">
               <span>get started</span>
               <PiArrowCircleUpRight className="text-lg md:text-xl" />
             </button>
