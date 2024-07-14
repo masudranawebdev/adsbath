@@ -61,7 +61,7 @@ const Banner6 = () => {
             />
           </div>
         </div>
-        <div className="bg-blue-600 border-b border-gray-300 h-1 "></div>
+        <div className="bg-blue-600 border-b border-gray-300 "></div>
       </section>
     </div>
   );
