@@ -176,15 +176,6 @@ const Banner3 = () => {
             alt=""
           />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            width={200}
-            height={200}
-            className="h-[275px] w-[350px] rounded-lg object-cover"
-            src={banner5}
-            alt=""
-          />
-        </SwiperSlide>
       </Swiper>
       {/* <div className="mx-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 w-full">
         {Products.map((product) => (
