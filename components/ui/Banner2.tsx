@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import levis from "../../assets/AdsBath//levis.png";
+import levis from "../../assets/AdsBath/levis.png";
 
 const Banner2 = () => {
   return (
