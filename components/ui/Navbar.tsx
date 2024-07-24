@@ -12,7 +12,7 @@ const Navbar = () => {
           height={500}
           width={500}
         />
-        <div className="flex items-center">
+        <div className="flex items-center gap-10">
           <NavMenu />
           <button className="mx-0 md:mx-10 cursor-pointer uppercase h-[60px] sm:h-[48px] w-[280px] rounded-lg bg-gradient-to-r from-blue-600 to-pink-600 text-white ">
             get free consultation
