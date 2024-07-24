@@ -4,7 +4,7 @@ const NavMenu = () => {
   return (
     <div className={`flex items-center gap-9`}>
       <Link
-        href="/#"
+        href="/"
         className="cursor-pointer text-base border-b-2 border-blue-900"
       >
         Home

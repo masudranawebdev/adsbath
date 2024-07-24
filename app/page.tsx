@@ -1,6 +1,7 @@
 "use client";
 
-import Banner from "@/components/ui/Banner";
+import HeroSection from "@/components/ui/HeroSection";
+import Banner from "@/components/ui/HeroSection";
 import Banner2 from "@/components/ui/Banner2";
 import Banner3 from "@/components/ui/Banner3";
 import Banner4 from "@/components/ui/Banner4";
@@ -14,9 +15,8 @@ import React from "react";
 
 function page() {
   return (
-    <div>
-      <Navbar />
-      <Banner />
+    <>
+      <HeroSection />
       <Banner2 />
       <Banner3 />
       <Banner4 />
@@ -25,7 +25,7 @@ function page() {
       <Banner7 />
       <Banner8 />
       <Footer />
-    </div>
+    </>
   );
 }
 

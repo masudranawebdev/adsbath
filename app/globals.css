@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: #040710;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -36,7 +36,7 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: #040710;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -70,27 +70,37 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-#app {
-  height: 100%;
-}
-html,
-body {
-  position: relative;
-  height: 100%;
 }
 
 body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+  background-color: #040710;
+  color: white;
+}
+
+.hero-bg {
+  background-image: url("/hero-section-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #040710;
+}
+
+.hero-text {
+  background: linear-gradient(
+    91deg,
+    #fe0573 1.74%,
+    #fff 43.71%,
+    #fff 61.62%,
+    #5c48c7 102.48%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-family: Raleway; */
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .swiper {
