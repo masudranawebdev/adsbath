@@ -6,29 +6,29 @@ import Navbar from "./Navbar";
 
 const HeroSection = () => {
   return (
-    <section className="hero-bg">
+    <section className="hero-bg h-screen">
       <Navbar />
-      <div className="lg:-mt-28 md:-mt-20 -mt-10 container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between sm:py-12 lg:py-24 md:px-5">
+      <div className="mt-2 container mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between">
           <div className="flex flex-col justify-center ">
             <div className="relative">
-              <h1>
+              <h1 className="text-2xl lg:text-6xl  ">
                 <span className="hero-text ">Amazing Website</span> <br />
                 <span className="hero-text ">Create with Bantu</span> <br />
                 <span className="hero-text ">Agency</span>
               </h1>
-              <span className="absolute top-36 left-10">
+              <span className="absolute top-32 left-14">
                 <Image
                   src="/hero-vector.png"
                   alt="hero-vector"
                   width={200}
                   height={200}
-                  className="h-7 w-24"
+                  className="h-7 w-24 hidden lg:flex"
                 />
               </span>
             </div>
 
-            <p className="text-lg">
+            <p className="text-md md:text-lg">
               help you to build website company this is modern. user friendly.
             </p>
 
@@ -44,7 +44,7 @@ const HeroSection = () => {
               width={1400}
               src="/hero-section-image.png"
               alt="hero-section-image"
-              className="w-[663px] h-[646px]"
+              className="w-[249px] h-[200px] lg:w-[663px] lg:h-[646px]"
             />
           </div>
         </div>
