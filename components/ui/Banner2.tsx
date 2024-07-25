@@ -1,13 +1,37 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
-import levis from "../../assets/AdsBath/levis.png";
 
 const Banner2 = () => {
   return (
-    <div className="w-full">
-      <Image src={levis} alt="Levis" className="w-full h-auto" />
+    <div
+      style={{
+        background:
+          "linear-gradient(90deg, rgba(33, 65, 161, 0.20) 0%, rgba(215, 37, 203, 0.20) 100%)",
+      }}
+      className="w-full h-[126px] py-2 flex items-center justify-center gap-10"
+    >
+      <Image
+        src="/expedia-grayscale.png"
+        height={300}
+        width={300}
+        alt="mouse-pointer"
+        className="h-[50px] w-[150px]"
+      />
+      <Image
+        src="/mouse-pointer.png"
+        height={300}
+        width={300}
+        alt="mouse-pointer"
+        className="h-[100px] w-[100px]"
+      />
+      <Image
+        src="/shopify-grayscale.png"
+        height={300}
+        width={300}
+        alt="mouse-pointer"
+        className="h-[50px] w-[140px]"
+      />
     </div>
   );
 };
