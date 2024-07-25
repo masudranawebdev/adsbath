@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 
 const HeroSection = () => {
   return (
-    <section className="hero-bg lg:h-screen ">
+    <section className="hero-bg lg:h-[870px] ">
       <Navbar />
       <div className="mt-2 container mx-auto ">
         <div className="flex flex-col md:flex-row justify-between pb-10 lg:pb-0">
