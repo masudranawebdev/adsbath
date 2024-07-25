@@ -16,8 +16,8 @@ function page() {
     <>
       <HeroSection />
       <Banner2 />
-      <section className="relative">
-        <div className="container mx-auto flex flex-col justify-center sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+      <section className="relative bg-[#0f1320]">
+        <div className="container z-10 mx-auto flex flex-col justify-center sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <div className="lg:w-[750px] md:w-[450px] w-[320px]  lg:ml-0 ml-0 md:ml-32 lg:mt-0 md:mt-8 mt-0">
               <span
@@ -59,11 +59,32 @@ function page() {
               alt="section-image.png"
               height={1000}
               width={1000}
-              className="object-contain w-[500px] h-[500px] "
+              className="object-contain w-[500px] h-[500px] z-10"
             />
           </div>
         </div>
-        <div className="orient absolute -bottom-1/2"></div>
+
+        <div className="absolute top-0 -left-20 z-0">
+          <Image
+            src="/ads-audit-bg-1.png"
+            alt="section-image.png"
+            height={1000}
+            width={1000}
+            className="object-contain w-[300px] h-[500px] "
+          />
+        </div>
+        <div className="absolute -bottom-14 -right-28 z-0">
+          <Image
+            src="/ads-audit-bg-2.png"
+            alt="section-image.png"
+            height={1000}
+            width={1000}
+            className="object-contain w-[979px] h-[540px] "
+          />
+        </div>
+
+        <div className="orient absolute -bottom-1/2  "></div>
+        <div className="background-blur  absolute bottom-0 right-0  "></div>
       </section>
       <Banner3 />
       <Banner4 />

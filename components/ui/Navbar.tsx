@@ -4,10 +4,10 @@ import NavMenu from "../nav-menu";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#040710]/80 text-white py-2 sticky top-0 shadow-2xl shadow-[#040710]">
+    <nav className="bg-[#040710] text-white py-2 sticky top-0 z-[500] shadow-2xl shadow-[#040710]">
       <div className="container mx-auto flex justify-between items-center">
         <Image
-          className="cursor-pointer h-[29px] w-[33px] lg:h-[77px] lg:w-[89px]"
+          className="cursor-pointer h-[29px] w-[33px] lg:h-[77px] lg:w-[89px] object-contain"
           src="/adsbath-logo.png"
           alt="Logo"
           height={500}
