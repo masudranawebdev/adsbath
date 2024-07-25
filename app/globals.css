@@ -102,6 +102,22 @@ body {
   line-height: normal;
 }
 
+.ads-audit {
+  background: linear-gradient(90deg, #504cff 0%, #e025ce 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.orient {
+  width: 502.86px;
+  height: 546.997px;
+  flex-shrink: 0;
+  border-radius: 546.997px;
+  background: rgba(176, 194, 255, 0.5);
+  filter: blur(350px);
+}
+
 .swiper {
   width: 100%;
   padding-top: 50px;

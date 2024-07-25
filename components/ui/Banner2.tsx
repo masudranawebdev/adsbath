@@ -16,21 +16,21 @@ const Banner2 = () => {
         height={300}
         width={300}
         alt="mouse-pointer"
-        className="h-[50px] w-[150px]"
+        className="h-[50px] w-[150px] object-contain"
       />
       <Image
         src="/mouse-pointer.png"
         height={300}
         width={300}
         alt="mouse-pointer"
-        className="h-[100px] w-[100px]"
+        className="h-[100px] w-[100px] object-contain"
       />
       <Image
         src="/shopify-grayscale.png"
         height={300}
         width={300}
         alt="mouse-pointer"
-        className="h-[50px] w-[140px]"
+        className="h-[50px] w-[140px] object-contain"
       />
     </div>
   );
