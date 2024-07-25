@@ -14,12 +14,12 @@ const Navbar = () => {
           width={500}
         />
         <div className="flex items-center lg:gap-10 gap-3 justify-between">
-          <NavMenu className="hidden md:flex" />
+          <NavMenu className="hidden lg:flex" />
           <button
             style={{
               background: "linear-gradient(90deg, #1A43A3 0%, #E025CE 100%)",
             }}
-            className="uppercase h-[29px] lg:h-[52px] rounded-xl  text-xs px-4 lg:px-10"
+            className="uppercase h-[29px] lg:h-[52px] rounded-md text-xs px-4 lg:px-10"
           >
             get free consultation
           </button>

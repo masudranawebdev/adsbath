@@ -119,3 +119,9 @@ body {
   display: block;
   width: 100%;
 }
+
+@media (max-width: 500px) {
+  .hero-bg {
+    background-image: url("/herosection-bg-phone.png");
+  }
+}

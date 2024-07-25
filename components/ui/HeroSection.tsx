@@ -6,15 +6,16 @@ import Navbar from "./Navbar";
 
 const HeroSection = () => {
   return (
-    <section className="hero-bg h-screen">
+    <section className="hero-bg lg:h-screen ">
       <Navbar />
-      <div className="mt-2 container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between">
+      <div className="mt-2 container mx-auto ">
+        <div className="flex flex-col md:flex-row justify-between pb-10 lg:pb-0">
           <div className="flex flex-col justify-center ">
             <div className="relative">
-              <h1 className="text-2xl lg:text-6xl  ">
+              <h1 className="text-3xl lg:text-6xl  ">
                 <span className="hero-text ">Amazing Website</span> <br />
-                <span className="hero-text ">Create with Bantu</span> <br />
+                <span className="hero-text ">Create with Bantu</span>{" "}
+                <br className="hidden lg:block" />
                 <span className="hero-text ">Agency</span>
               </h1>
               <span className="absolute top-32 left-14">
@@ -23,22 +24,22 @@ const HeroSection = () => {
                   alt="hero-vector"
                   width={200}
                   height={200}
-                  className="h-7 w-24 hidden lg:flex"
+                  className="h-7 w-24 hidden lg:flex "
                 />
               </span>
             </div>
 
-            <p className="text-md md:text-lg">
+            <p className="text-md md:text-lg lg:py-8 py-3">
               help you to build website company this is modern. user friendly.
             </p>
 
-            <button className="bg-[#fff] lg:ml-0 ml-0 md:ml-52 w-full sm:w-48 md:w-56 lg:w-64 xl:w-48 h-12 font-semibold rounded-full uppercase text-black my-4 flex items-center justify-center space-x-2">
-              <span>get started</span>
+            <button className="flex items-center gap-3 w-fit bg-white rounded-full py-3 px-6 text-black text-sm">
+              <span>Get Started</span>
               <PiArrowCircleUpRight className="text-lg md:text-xl" />
             </button>
           </div>
 
-          <div className="">
+          <div className="flex justify-center">
             <Image
               height={1400}
               width={1400}
