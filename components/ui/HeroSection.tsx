@@ -2,14 +2,12 @@
 
 import Image from "next/image";
 import { PiArrowCircleUpRight } from "react-icons/pi";
-import Navbar from "./Navbar";
 
 const HeroSection = () => {
   return (
-    <section className="hero-bg lg:h-[870px] ">
-      <Navbar />
-      <div className="mt-2 container mx-auto ">
-        <div className="flex flex-col md:flex-row justify-between pb-10 lg:pb-0">
+    <section className="hero-bg lg:h-[870px] lg:-mt-[92px] ">
+      <div className="container mx-auto h-full w-full flex items-center">
+        <div className="flex flex-col md:flex-row flex-1 justify-between items-center pb-10 lg:pb-0">
           <div className="flex flex-col justify-center ">
             <div className="relative">
               <h1 className="text-3xl lg:text-6xl  ">
