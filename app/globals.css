@@ -167,6 +167,13 @@ body {
   height: 587.332px;
   flex-shrink: 0;
 }
+.background-blur-service-2 {
+  background: rgba(87, 87, 87, 0.6);
+  filter: blur(150px);
+  width: 641px;
+  height: 287px;
+  flex-shrink: 0;
+}
 
 @media (max-width: 500px) {
   .hero-bg {

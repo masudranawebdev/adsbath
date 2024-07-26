@@ -15,7 +15,6 @@ function page() {
       <HeroSection />
       <Banner2 />
       <Banner3 />
-
       <Banner5 />
       <Banner6 />
       <Banner7 />

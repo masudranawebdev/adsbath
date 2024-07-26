@@ -298,6 +298,26 @@ const Banner3 = () => {
         </div>
 
         <div className="background-blur-service absolute top-[20%] -right-[20%] z-0"></div>
+        <div className="background-blur-service-2 absolute top-[20%] -left-[20%] z-0"></div>
+
+        <div className="absolute top-[70%] left-0 z-0 overflow-hidden">
+          <Image
+            src="/service-vector.png"
+            alt="section-image.png"
+            height={1000}
+            width={1000}
+            className="object-contain w-[60%] "
+          />
+        </div>
+        <div className="absolute top-[30%] right-0 z-0 overflow-hidden rotate-180">
+          <Image
+            src="/service-vector.png"
+            alt="section-image.png"
+            height={1000}
+            width={1000}
+            className="object-contain w-[60%] "
+          />
+        </div>
       </div>
     </section>
   );
