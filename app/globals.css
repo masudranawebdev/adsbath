@@ -125,10 +125,9 @@ body {
   filter: blur(125px);
 }
 
-.the-service {
-  font-size: 60px;
+.service-hading {
   font-weight: 400;
-  line-height: 75px; /* 110.294% */
+   /* 110.294% */
   background: linear-gradient(
     91deg,
     #fe0474 1.74%,

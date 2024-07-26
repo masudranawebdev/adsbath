@@ -108,7 +108,7 @@ const Banner3 = () => {
           </div>
         </div>
 
-        <div className="absolute top-0 -left-20 z-0 overflow-hidden">
+        <div className="absolute top-0 -left-32 lg:-left-20 z-0 overflow-hidden  ">
           <Image
             src="/ads-audit-bg-1.png"
             alt="section-image.png"
@@ -117,7 +117,7 @@ const Banner3 = () => {
             className="object-contain w-[300px] h-[500px] "
           />
         </div>
-        <div className="absolute -bottom-14 -right-28 z-0 overflow-hidden">
+        <div className="absolute -bottom-14 -right-28 z-0 overflow-hidden hidden lg:flex">
           <Image
             src="/ads-audit-bg-2.png"
             alt="section-image.png"
@@ -133,8 +133,12 @@ const Banner3 = () => {
       {/* section 3 */}
       <div>
         <div className="container mx-auto items-center justify-center flex flex-col">
-          <h1 className="the-service ">The Service We Provide For You</h1>
-          <p className="my-5 text-center text-sm sm:text-base w-3/4 ">
+          <h1 className="service-hading text-center lg:text-[60px] md:text-4xl text-2xl my-4">
+            The Service We Provide
+            <br className="md:hidden" />
+            For You
+          </h1>
+          <p className="my-5 text-center text-sm sm:text-base   md:w-3/4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
             non iusto cum nemo, magnam dolore reprehenderit? Nam praesentium
             voluptas suscipit, omnis aliquam earum minima! Perspiciatis nemo
@@ -142,8 +146,6 @@ const Banner3 = () => {
             quisquam rem
           </p>
         </div>
-
-        {/*  */}
 
         <Swiper
           effect={"coverflow"}
@@ -258,10 +260,11 @@ const Banner3 = () => {
       {/* service */}
       <div className="relative">
         <div className="container mx-auto items-center justify-center flex flex-col">
-          <h1 className="the-service text-center">
-            Behind the Scenes: Our Process <br /> for Digital Dominance
+          <h1 className="service-hading text-center lg:text-[60px] md:text-4xl text-2xl my-4">
+            Behind the Scenes: Our Process <br className="hidden md:block" />
+            for Digital Dominance
           </h1>
-          <p className="my-5 text-center text-sm sm:text-base w-3/4">
+          <p className="my-5 text-center text-sm sm:text-base md:w-3/4">
             At [Agency Name], we specialize in meticulous digital marketing. By
             understanding your goals and exploring your brand and audience, we
             create tailored strategies integrating SEO, PPC, and cutting-edge
@@ -270,14 +273,14 @@ const Banner3 = () => {
             a strategic partnership driving impactful growth.
           </p>
         </div>
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service) => (
             <div
               key={service.id}
               style={{
                 boxShadow: "1px 1px 10.9px 5px rgba(86, 86, 86, 0.20)",
               }}
-              className="w-[408px] rounded-2xl bg-[#100C1D] p-8   z-10"
+              className="w-full rounded-2xl bg-[#100C1D] p-8   z-10"
             >
               <Image
                 width={1000}

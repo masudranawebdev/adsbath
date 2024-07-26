@@ -43,7 +43,7 @@ const HeroSection = () => {
               width={1400}
               src="/hero-section-image.png"
               alt="hero-section-image"
-              className="w-[249px] h-[200px] lg:w-[663px] lg:h-[646px] object-contain"
+              className="w-[80%]  lg:w-[663px] lg:h-[646px] object-contain"
             />
           </div>
         </div>
