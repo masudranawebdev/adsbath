@@ -125,6 +125,22 @@ body {
   filter: blur(125px);
 }
 
+.the-service {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 75px; /* 110.294% */
+  background: linear-gradient(
+    91deg,
+    #fe0474 1.74%,
+    #fff 43.71%,
+    #fff 61.62%,
+    #be9fff 102.48%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -141,6 +157,15 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.background-blur-service {
+  border-radius: 587.332px;
+  background: rgba(224, 37, 206, 0.5);
+  filter: blur(350px);
+  width: 570.654px;
+  height: 587.332px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 500px) {
