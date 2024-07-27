@@ -127,7 +127,7 @@ body {
 
 .service-hading {
   font-weight: 400;
-   /* 110.294% */
+  line-height: 75px !important; /* 110.294% */
   background: linear-gradient(
     91deg,
     #fe0474 1.74%,
@@ -177,5 +177,8 @@ body {
 @media (max-width: 500px) {
   .hero-bg {
     background-image: url("/herosection-bg-phone.png");
+  }
+  .service-hading {
+    line-height: 28px;
   }
 }

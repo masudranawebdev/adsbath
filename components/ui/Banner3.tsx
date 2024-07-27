@@ -131,7 +131,7 @@ const Banner3 = () => {
         <div className="background-blur  absolute bottom-0 right-0  "></div>
       </div>
       {/* section 3 */}
-      <div>
+      <div id="service">
         <div className="container mx-auto items-center justify-center flex flex-col">
           <h1 className="service-hading text-center lg:text-[60px] md:text-4xl text-2xl my-4">
             The Service We Provide
