@@ -256,7 +256,6 @@ const Banner3 = () => {
         </div>
         {/*  */}
       </div>
-
       {/* service */}
       <div className="relative">
         <div className="container mx-auto items-center justify-center flex flex-col">
