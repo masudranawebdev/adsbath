@@ -2,7 +2,7 @@
 
 import { IoCalendarSharp } from "react-icons/io5";
 
-const Banner8 = () => {
+const WhatOurMember = () => {
   return (
     <div className="bg-gradient-to-r from-blue-950 to-black text-white">
       <div className="p-6 py-12 shadow-2xl ">
@@ -29,4 +29,4 @@ const Banner8 = () => {
   );
 };
 
-export default Banner8;
+export default WhatOurMember;

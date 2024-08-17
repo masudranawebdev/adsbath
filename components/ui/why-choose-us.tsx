@@ -6,7 +6,7 @@ import logo from "../../assets/AdsBath/product/Scre.png";
 import Levis from "../../assets/AdsBath/Screenshot.png";
 import { TbActivityHeartbeat } from "react-icons/tb";
 
-const Banner5 = () => {
+const WhyChooseUs = () => {
   return (
     <div className="bg-[#171616] text-white ">
       <section className="lg:-mt-28 md:-mt-16 -mt-10 lg:mr-80 ">
@@ -70,4 +70,4 @@ const Banner5 = () => {
   );
 };
 
-export default Banner5;
+export default WhyChooseUs;

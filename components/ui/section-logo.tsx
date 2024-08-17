@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const Banner2 = () => {
+const SectionLogo = () => {
   return (
     <div
       style={{
@@ -36,4 +36,4 @@ const Banner2 = () => {
   );
 };
 
-export default Banner2;
+export default SectionLogo;

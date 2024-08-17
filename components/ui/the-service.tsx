@@ -7,7 +7,7 @@ import { services } from "@/lib/data";
 
 import CardCarousel from "../card-carousel";
 
-const Banner3 = () => {
+const TheService = () => {
   const Products = [
     {
       id: 1,
@@ -155,7 +155,7 @@ for Digital Dominance */}
   );
 };
 
-export default Banner3;
+export default TheService;
 
 {
   /* <div className="relative">

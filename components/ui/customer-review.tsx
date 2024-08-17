@@ -7,7 +7,7 @@ import man3 from "../../assets/AdsBath/man/download.jpeg";
 import { FaStar } from "react-icons/fa";
 import { GrFormNextLink, GrLinkNext } from "react-icons/gr";
 
-const Banner7 = () => {
+const CustomerReview = () => {
   return (
     <div className="bg-[#171616] text-white">
       <section className=" lg:-mt-28 md:-mt-20 -mt-10">
@@ -100,4 +100,4 @@ const Banner7 = () => {
   );
 };
 
-export default Banner7;
+export default CustomerReview;
