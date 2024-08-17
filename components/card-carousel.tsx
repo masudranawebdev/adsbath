@@ -23,21 +23,29 @@ const slideDataArray: SlideData[] = [
     totalProjects: 150,
   },
   {
+    title: "Google Ads",
+    description:
+      "Leverage Google Ads to place your business in front of potential customers when they're searching for products or services you offer. With well-optimized campaigns, you can drive targeted traffic to your site, maximize your return on investment, and achieve your marketing goals more efficiently.",
+    imageUrl: "/google-ads.png",
+    currentClients: 180,
+    totalProjects: 120,
+  },
+  {
+    title: "Content Marketing",
+    description:
+      "Create and distribute valuable, relevant content to attract and engage your target audience. With content marketing, you can build trust with your audience, establish your brand as an industry authority, and nurture relationships that lead to increased customer loyalty and higher conversion rates.",
+    imageUrl: "/content-marketing.png",
+    currentClients: 160,
+    totalProjects: 110,
+  },
+  {
     title: "Social Media Management",
     description:
       "Effectively manage your brand's social media presence across multiple platforms to increase engagement and reach. By consistently posting relevant content, interacting with your audience, and monitoring performance, you can build a strong online community and drive meaningful interactions with your brand.",
     imageUrl: "/social-media-management.png",
     currentClients: 200,
     totalProjects: 130,
-  },
-  {
-    title: "Email Marketing",
-    description:
-      "Utilize targeted email campaigns to connect with your audience on a personal level. By sending relevant and timely messages, you can nurture leads, promote products, and keep your customers informed, all while driving higher engagement rates and encouraging repeat business from your subscribers.",
-    imageUrl: "/email-marketing.png",
-    currentClients: 190,
-    totalProjects: 140,
-  },
+  }, 
   {
     title: "Conversion Rate Optimization",
     description:
@@ -66,8 +74,9 @@ const slideDataArray: SlideData[] = [
 
 const CardCarousel: React.FC = () => {
   const [goToSlide, setGoToSlide] = useState<number>(0);
+  const [offsetRadius, setOffsetRadius] = useState<number>(3);
   const [enableSwipe, setEnableSwipe] = useState<boolean>(true);
-  const [animationConfig, setAnimationConfig] = useState(config.slow);
+  const [animationConfig, setAnimationConfig] = useState(config.stiff);
 
   const slides = slideDataArray.map((slide, index) => ({
     key: index,
@@ -101,7 +110,6 @@ const CardCarousel: React.FC = () => {
   const handleTouchStart = useCallback(
     (evt: React.TouchEvent) => {
       if (!enableSwipe) return;
-
       const firstTouch = evt.touches[0];
       const { clientX: xDown, clientY: yDown } = firstTouch;
       (evt.currentTarget as HTMLElement).setAttribute(
@@ -158,9 +166,10 @@ const CardCarousel: React.FC = () => {
       <Carousel
         slides={slides}
         goToSlide={goToSlide}
-        offsetRadius={500}
+        offsetRadius={offsetRadius}
         showNavigation={false}
         animationConfig={animationConfig}
+        
       />
 
       {/* active card pagination */}
