@@ -2,21 +2,27 @@
 
 import Image from "next/image";
 import React from "react";
-import logo from "../../assets/AdsBath/product/Scre.png";
 import Levis from "../../assets/AdsBath/Screenshot.png";
 import { TbActivityHeartbeat } from "react-icons/tb";
+import Waveform from "./waveform";
 
 const WhyChooseUs = () => {
   return (
-    <div className="bg-[#171616] text-white ">
-      <section className="lg:-mt-28 md:-mt-16 -mt-10 lg:mr-80 ">
+    <section className="bg-[#02050e] text-white relative">
+      <div className="lg:-mt-28 md:-mt-16 -mt-10 lg:mr-80 z-10">
         <div className="lg:mt-28 md:mt-0 mt-0 container flex flex-col lg:flex-row justify-center p-6 mx-auto sm:py-16 lg:py-24 lg:justify-center">
-          <div className="flex items-center justify-center p-6 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-[28rem] 2xl:h-[32rem] flex-1">
-            <Image
-              src={logo}
-              alt=""
-              className="object-contain h-72 sm:h-80 lg:h-96 xl:h-[28rem] 2xl:h-[32rem] w-auto"
+          <div className="flex items-center justify-center p-6 flex-1 relative z-10">
+            <img
+              src="https://via.placeholder.com/500"
+              alt="logo"
+              className="object-contain h-[400px] aspect-square rounded-2xl "
             />
+
+            <div className="h-32 aspect-square  bg-[#E025CE] absolute p-5 rounded-md right-0">
+              <Waveform className="p-2 rounded-full bg-[#EE46BC] w-fit" />
+              <h5 className="text-2xl font-bold">20K+</h5>
+              <span className="text-xs">Project Done</span>
+            </div>
           </div>
 
           <div className="mt-10 flex flex-col items-center lg:items-start">
@@ -62,11 +68,14 @@ const WhyChooseUs = () => {
             </button>
           </div>
         </div>
-      </section>
-      <div className="w-full">
+      </div>
+      <div className="w-full z-10">
         <Image src={Levis} alt="Levis" className="w-full h-auto" />
       </div>
-    </div>
+
+      <div className="why-choose-us-pink absolute -left-10 top-20 -z-0" />
+      <div className="why-choose-us-pale absolute right-0 top-0 -z-0" />
+    </section>
   );
 };
 
