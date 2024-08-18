@@ -155,16 +155,16 @@ for Digital Dominance */}
       </div>
 
       {/* WhyChooseUs */}
-      <div className=" text-white relative">
-        <div className="lg:-mt-28 md:-mt-16 -mt-10 lg:mr-80 z-10">
-          <div className="container flex flex-col lg:flex-row justify-center p-6 mx-auto sm:py-16 lg:py-24">
-            <div className="flex items-center justify-center p-6 flex-1 relative z-10">
+      <div className="container mx-auto text-white relative">
+        <div className=" z-10">
+          <div className="container flex flex-col lg:flex-row justify-around p-6 mx-auto sm:py-16 lg:py-24">
+            <div className="flex items-center justify-start w-fit relative z-10 ">
               <img
                 src="https://via.placeholder.com/500"
                 alt="logo"
                 className="object-contain h-[400px] aspect-square rounded-2xl"
               />
-              <div className="h-40 flex flex-col  items-start justify-center aspect-square bg-[#E025CE] absolute p-5 rounded-md right-[180px] gap-2">
+              <div className="h-40 flex flex-col  items-start justify-center aspect-square bg-[#E025CE] absolute p-5 rounded-md -right-1/2 gap-2">
                 <Waveform className="p-2 rounded-full bg-[#EE46BC] w-fit " />
                 <h5 className="text-4xl font-bold">20K+</h5>
                 <span className="text-xs">Project Done</span>
@@ -213,8 +213,12 @@ for Digital Dominance */}
           </div>
         </div>
 
-        <div className="w-full z-10">
-          {/* <Image src={Levis} alt="Levis" className="w-full h-auto" /> */}
+        <div className="w-full border-b-2 py-5 z-10">
+          {Array(5).map((_, index) => (
+            <div key={index} className="flex justify-center items-center">
+              <div className="w-10 h-10 bg-[#E025CE] rounded-full" />
+            </div>
+          ))}
         </div>
 
         <div className="why-choose-us-pink absolute -left-10 top-20 -z-0" />
