@@ -1,11 +1,14 @@
 import Image from "next/image";
 import { PiArrowCircleUpRight } from "react-icons/pi";
 import { services } from "@/lib/data";
-import CardCarousel from "../card-carousel";
+// import CardCarousel from "../card-carousel";
 import ScheduleFreeConsultation from "./schedule-a-free-consultation";
 import OurMember from "./our-member";
 import CustomerReview from "./customer-review";
 import WhyChooseUs from "./why-choose-us";
+import dynamic from "next/dynamic";
+
+const CardCarousel = dynamic(() => import("../card-carousel"), { ssr: false });
 
 const TheService = () => {
   return (

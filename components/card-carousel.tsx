@@ -34,7 +34,8 @@ const slideDataArray: SlideData[] = [
     title: "Content Marketing",
     description:
       "Create and distribute valuable, relevant content to attract and engage your target audience. With content marketing, you can build trust with your audience, establish your brand as an industry authority, and nurture relationships that lead to increased customer loyalty and higher conversion rates.",
-    imageUrl: "/content-marketing.png",
+    // imageUrl: "/content-marketing.png",
+    imageUrl: "/google-ads.png",
     currentClients: 160,
     totalProjects: 110,
   },
@@ -42,15 +43,17 @@ const slideDataArray: SlideData[] = [
     title: "Social Media Management",
     description:
       "Effectively manage your brand's social media presence across multiple platforms to increase engagement and reach. By consistently posting relevant content, interacting with your audience, and monitoring performance, you can build a strong online community and drive meaningful interactions with your brand.",
-    imageUrl: "/social-media-management.png",
+    imageUrl: "/google-ads.png",
+    // imageUrl: "/social-media-management.png",
     currentClients: 200,
     totalProjects: 130,
-  }, 
+  },
   {
     title: "Conversion Rate Optimization",
     description:
       "Increase the percentage of website visitors who take desired actions, such as making a purchase or filling out a form. By analyzing user behavior and optimizing your site accordingly, you can remove obstacles, improve the user experience, and ultimately boost your conversion rates significantly.",
-    imageUrl: "/cro.png",
+    // imageUrl: "/cro.png",
+    imageUrl: "/google-ads.png",
     currentClients: 175,
     totalProjects: 125,
   },
@@ -58,7 +61,8 @@ const slideDataArray: SlideData[] = [
     title: "Pay-Per-Click Advertising",
     description:
       "Maximize your online presence and drive immediate traffic with PPC advertising. By bidding on relevant keywords, you can ensure your ads appear in front of potential customers who are actively searching for products or services like yours, leading to higher click-through rates and increased sales.",
-    imageUrl: "/ppc.png",
+    // imageUrl: "/ppc.png",
+    imageUrl: "/google-ads.png",
     currentClients: 210,
     totalProjects: 145,
   },
@@ -66,7 +70,8 @@ const slideDataArray: SlideData[] = [
     title: "Analytics and Reporting",
     description:
       "Gain valuable insights into your marketing efforts with detailed analytics and reporting. By tracking key performance indicators, you can measure the effectiveness of your campaigns, identify areas for improvement, and make data-driven decisions that lead to better results and a higher return on investment.",
-    imageUrl: "/analytics-reporting.png",
+    imageUrl: "/google-ads.png",
+    // imageUrl: "/analytics-reporting.png",
     currentClients: 185,
     totalProjects: 135,
   },
@@ -169,7 +174,6 @@ const CardCarousel: React.FC = () => {
         offsetRadius={offsetRadius}
         showNavigation={false}
         animationConfig={animationConfig}
-        
       />
 
       {/* active card pagination */}
