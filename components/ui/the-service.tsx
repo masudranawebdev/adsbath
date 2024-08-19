@@ -1,66 +1,13 @@
-"use client";
 import Image from "next/image";
 import { PiArrowCircleUpRight } from "react-icons/pi";
-
 import { services } from "@/lib/data";
 import CardCarousel from "../card-carousel";
-import { TbActivityHeartbeat } from "react-icons/tb";
-import Waveform from "./waveform";
-import { BiUpArrowCircle } from "react-icons/bi";
-import { IoIosArrowForward, IoIosStar } from "react-icons/io";
-import { FaCalendarAlt, FaStarHalfAlt } from "react-icons/fa";
 import ScheduleFreeConsultation from "./schedule-a-free-consultation";
 import OurMember from "./our-member";
 import CustomerReview from "./customer-review";
 import WhyChooseUs from "./why-choose-us";
 
 const TheService = () => {
-  const Products = [
-    {
-      id: 1,
-      name: "Linkedin Marketing",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum quasi quaerat iste cupiditate ullam earum molestiae assumenda temporafacere a expedita?",
-      Url: "https://i.ibb.co/g7yJv6v/f3.png",
-    },
-    {
-      id: 2,
-      name: "Facebook Ads Marketing",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum quasi quaerat iste cupiditate ullam earum molestiae assumenda temporafacere a expedita?",
-      Url: "https://i.ibb.co/w4PmL9P/fa.jpg",
-    },
-    {
-      id: 3,
-      name: "Search Engine Optimization",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum quasi quaerat iste cupiditate ullam earum molestiae assumenda temporafacere a expedita?",
-      Url: "https://i.ibb.co/6gLzd07/f2.jpg",
-    },
-    {
-      id: 4,
-      name: "Google Ads Marketing",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum quasi quaerat iste cupiditate ullam earum molestiae assumenda temporafacere a expedita?",
-      Url: "https://i.ibb.co/FKJYkyT/fa1.jpg",
-    },
-    {
-      id: 5,
-      name: "Digital Marketing",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum quasi quaerat iste cupiditate ullam earum molestiae assumenda temporafacere a expedita?",
-      Url: "https://i.ibb.co/pbdgr9Q/f4.jpg",
-    },
-  ];
-
-  const handleTouchStart = (evt: React.TouchEvent) => {
-    // Implement your touch start logic
-  };
-
-  const handleTouchMove = (evt: React.TouchEvent) => {
-    // Implement your touch move logic
-  };
-
   return (
     <section className="relative bg-[#0f1320] overflow-hidden">
       {/* The Service We ProvideFor You */}
