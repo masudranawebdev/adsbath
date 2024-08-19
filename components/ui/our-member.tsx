@@ -1,101 +1,118 @@
-import Image from "next/image";
 import React from "react";
-import banner from "../../assets/AdsBath/Screensh.png";
-import man from "../../assets/AdsBath/man/downjpeg.jpeg";
-import man2 from "../../assets/AdsBath/man/downloa.jpeg";
-import man3 from "../../assets/AdsBath/man/download.jpeg";
-import { FaStar } from "react-icons/fa";
-import { GrFormNextLink, GrLinkNext } from "react-icons/gr";
+import { IoIosArrowForward, IoIosStar } from "react-icons/io";
 
 const OurMember = () => {
   return (
-    <div className="bg-[#171616] text-white">
-      <section className=" lg:-mt-28 md:-mt-20 -mt-10">
-        <div className="lg:mt-28 md:mt-0 mt-0  container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-          <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <div className="lg:w-[750px]  md:w-[450px] w-[320px] lg:mb-44 md:mb-10 mb-0 lg:ml-0 ml-0 md:ml-32 lg:mt-0 md:mt-8 mt-0">
-              <p className="lg:text-5xl md:text-4xl text-2xl my-4 bg-gradient-to-r text-[#fff]">
-                What Our Member
-              </p>
-              <span className="lg:text-5xl md:text-4xl text-2xl my-4 ">
-                <span>Say About Us?</span>
-              </span>
+    <div className="text-white py-12">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center p-6">
+        {/* Left Section */}
+        <div className="flex flex-col items-start lg:w-1/2 p-6">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            What Our Member Say About Us?
+          </h2>
+          <div className="flex items-center">
+            <div className="flex -space-x-3">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Customer 1"
+                className="w-12 h-12 border-2 border-white rounded-full"
+              />
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Customer 2"
+                className="w-12 h-12 border-2 border-white rounded-full"
+              />
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Customer 3"
+                className="w-12 h-12 border-2 border-white rounded-full"
+              />
             </div>
-
-            <div className="flex lg:-ml-8 ml-14 md:ml-44 lg:-my-16 -my-0  ">
-              <div className="flex flex-col items-center justify-start">
-                <div className="flex -space-x-4">
-                  <Image
-                    alt=""
-                    className="w-12 h-12 border rounded-full dark:bg-gray-500 dark:border-gray-300"
-                    src={man}
-                  />
-                  <Image
-                    alt=""
-                    className="w-12 h-12 border rounded-full dark:bg-gray-500 dark:border-gray-300"
-                    src={man3}
-                  />
-                  <Image
-                    alt=""
-                    className="w-12 h-12 border rounded-full dark:bg-gray-500 dark:border-gray-300"
-                    src={man2}
-                  />
-                </div>
-                <p className="my-5 ml-10">10K + Satisfied Customer</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex items-center justify-center  p-6 mt-12 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-[28rem] 2xl:h-[32rem]">
-            <div className="container flex flex-col w-full max-w-lg p-6 mx-auto rounded-md bg-gradient-to-r from-blue-900 to-purple-900 text-white">
-              <div className="flex justify-end p-4">
-                <div className="flex items-end space-x-2 text-white">
-                  <div className="text-yellow-600 flex gap-2 text-lg">
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                  </div>
-                </div>
-              </div>
-              <div className="p-4 space-y-2 text-sm text-white">
-                <p>
-                  Vivamus sit amet turpis leo. Praesent varius eleifend elit, eu
-                  dictum lectus consequat vitae. Etiam ut dolor id justo
-                  fringilla finibus.
-                </p>
-                <p>
-                  Donec eget ultricies diam, eu molestie arcu. Etiam nec lacus
-                  eu mauris cursus venenatis. Maecenas gravida urna vitae
-                  accumsan feugiat. Vestibulum commodo, ante sit urna purus
-                  rutrum sem.
-                </p>
-              </div>
-              <div className="flex justify-between">
-                <div className="flex my-4 space-x-4">
-                  <div>
-                    <Image
-                      src={man2}
-                      alt=""
-                      className="object-cover w-12 h-12 rounded-full bg-gray-500"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-bold">Jhon Adam</h4>
-                    <span className="text-xs text-white">Office worker</span>
-                  </div>
-                </div>
-                {/*  */}
-                <div className="mt-4">
-                  <p>
-                    <GrFormNextLink className="bg-slate-400 text-blue-600 rounded-full h-9 w-9" />
-                  </p>
-                </div>
-              </div>
-            </div>
+            <p className="ml-4 text-sm">10K+ Satisfied Customers</p>
           </div>
         </div>
-      </section>
+
+        {/* Right Section */}
+        {/* <div className="lg:w-1/2 p-6 bg-[#1c1c1c] rounded-lg shadow-lg relative">
+          <p className="text-lg italic mb-4">
+            Join this fitness member, the best choice that I&apos;ve made.
+            They&apos;re very professional and give you suggestions about what
+            food and nutrition that you can eat.
+          </p>
+          <div className="flex items-center mb-4">
+            <div className="flex-shrink-0">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Jonathan Edward"
+                className="w-12 h-12 rounded-full"
+              />
+            </div>
+            <div className="ml-4">
+              <p className="font-bold">Jonathan Edward</p>
+              <p className="text-sm text-gray-400">Office Worker</p>
+            </div>
+          </div>
+          <div className="flex items-center justify-between">
+            <div className="flex space-x-1">
+              <IoIosStar className="text-yellow-400 text-xl" />
+              <IoIosStar className="text-yellow-400 text-xl" />
+              <IoIosStar className="text-yellow-400 text-xl" />
+              <IoIosStar className="text-yellow-400 text-xl" />
+              <IoIosStar className="text-yellow-400 text-xl" />
+            </div>
+            <button className="bg-blue-600 text-white p-2 rounded-full">
+              <IoIosArrowForward className="text-xl" />
+            </button>
+          </div>
+          <div className="absolute bottom-4 right-4 flex space-x-2">
+            <span className="block w-2 h-2 bg-blue-600 rounded-full"></span>
+            <span className="block w-2 h-2 bg-gray-500 rounded-full"></span>
+            <span className="block w-2 h-2 bg-gray-500 rounded-full"></span>
+          </div>
+        </div> */}
+        <div className="bg-[#2c1053] text-white rounded-lg shadow-lg p-8 max-w-lg mx-auto">
+          {/* Stars Section */}
+          <div className="flex justify-end mb-4">
+            <IoIosStar className="text-yellow-400 text-xl" />
+            <IoIosStar className="text-yellow-400 text-xl" />
+            <IoIosStar className="text-yellow-400 text-xl" />
+            <IoIosStar className="text-yellow-400 text-xl" />
+            <IoIosStar className="text-yellow-400 text-xl" />
+          </div>
+
+          {/* Testimonial Text */}
+          <p className="text-lg italic mb-6">
+            Join this fitness member, the best choice that Ive made. Theyre very
+            professional and give you suggestions about what food and nutrition
+            you can eat.
+          </p>
+
+          {/* User Info */}
+          <div className="flex items-center mb-4">
+            <img
+              src="https://via.placeholder.com/50"
+              alt="Jonathan Edward"
+              className="w-12 h-12 rounded-full"
+            />
+            <div className="ml-4">
+              <p className="font-bold">Jonathan Edward</p>
+              <p className="text-sm text-gray-400">Office Worker</p>
+            </div>
+          </div>
+
+          {/* Navigation and Indicators */}
+          <div className="flex justify-between items-center">
+            <div className="flex space-x-2">
+              <span className="block w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span className="block w-2 h-2 bg-gray-500 rounded-full"></span>
+              <span className="block w-2 h-2 bg-gray-500 rounded-full"></span>
+            </div>
+            <button className="bg-white text-blue-600 p-2 rounded-full">
+              <IoIosArrowForward className="text-xl" />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

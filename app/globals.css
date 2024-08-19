@@ -204,6 +204,15 @@ body {
   filter: blur(350px);
 }
 
+.footer-gradient {
+  background: linear-gradient(
+    93deg,
+    rgba(16, 24, 40, 0.3) 15.94%,
+    rgba(224, 37, 206, 0.3) 100%
+  );
+  
+}
+
 @media (max-width: 500px) {
   .hero-bg {
     background-image: url("/herosection-bg-phone.png");

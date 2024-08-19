@@ -7,8 +7,12 @@ import CardCarousel from "../card-carousel";
 import { TbActivityHeartbeat } from "react-icons/tb";
 import Waveform from "./waveform";
 import { BiUpArrowCircle } from "react-icons/bi";
-import { IoIosStar } from "react-icons/io";
-import { FaStarHalfAlt } from "react-icons/fa";
+import { IoIosArrowForward, IoIosStar } from "react-icons/io";
+import { FaCalendarAlt, FaStarHalfAlt } from "react-icons/fa";
+import ScheduleFreeConsultation from "./schedule-a-free-consultation";
+import OurMember from "./our-member";
+import CustomerReview from "./customer-review";
+import WhyChooseUs from "./why-choose-us";
 
 const TheService = () => {
   const Products = [
@@ -156,216 +160,15 @@ for Digital Dominance */}
       </div>
 
       {/* WhyChooseUs */}
-      <div className="container mx-auto text-white relative pb-5">
-        <div className=" z-10">
-          <div className="container flex flex-col lg:flex-row justify-around p-6 mx-auto sm:py-16 lg:py-24">
-            <div className="flex items-center justify-start w-fit relative z-10 ">
-              <img
-                src="https://via.placeholder.com/500"
-                alt="logo"
-                className="object-contain h-[400px] aspect-square rounded-2xl"
-              />
-              <div className="h-40 flex flex-col  items-start justify-center aspect-square bg-[#E025CE] absolute p-5 rounded-md -right-[80px] gap-2">
-                <Waveform className="p-2 rounded-full bg-[#EE46BC] w-fit " />
-                <h5 className="text-4xl font-bold">20K+</h5>
-                <span className="text-xs">Project Done</span>
-              </div>
-            </div>
-
-            <div className="mt-10 flex flex-col items-center lg:items-start">
-              <button className="h-7 w-36 bg-white rounded-3xl text-purple-700">
-                Why Choose Us
-              </button>
-
-              <h1 className="lg:text-5xl md:text-3xl text-2xl font-semibold text-center lg:text-left mt-4 lg:mt-0">
-                <span className="block py-3">Choose Us to Grow</span>
-                <span className="block ">Your Business</span>
-              </h1>
-
-              <div className="text-center lg:text-left mt-4">
-                <p className="py-2">
-                  Placerat sed enim felis arcu. Placerat aliquam amet eleifend
-                </p>
-                <p className="">
-                  sollicitudin mauris. Nibh sit diam vitae velit cras elit eget.
-                </p>
-              </div>
-
-              <div className="py-6">
-                {[
-                  "Results-Driven Approach",
-                  "Tailored Solutions",
-                  "Proven Track Record",
-                ].map((text, index) => (
-                  <p
-                    key={index}
-                    className="flex py-2 gap-3 items-center justify-center lg:justify-start"
-                  >
-                    <TbActivityHeartbeat className="bg-pink-500 h-8 w-8 rounded-full my-2 -mt-1" />
-                    {text}
-                  </p>
-                ))}
-              </div>
-
-              <button className="uppercase h-10 w-32 lg:h-12 lg:w-40 rounded-lg bg-gradient-to-r from-blue-800 to-pink-600 text-white flex items-center justify-center">
-                Contact Now
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full border-b-2 py-5 z-10">
-          {Array(5).map((_, index) => (
-            <div key={index} className="flex justify-center items-center">
-              <div className="w-10 h-10 bg-[#E025CE] rounded-full" />
-            </div>
-          ))}
-        </div>
-
-        <div className="why-choose-us-pink absolute -left-10 top-20 -z-0" />
-        <div className="why-choose-us-pale absolute right-0 top-0 -z-0" />
-      </div>
-
+      <WhyChooseUs />
       {/* Customer Review */}
-      <div className="container mx-auto text-white">
-        <div className="lg:-mt-28 md:-mt-20 -mt-10">
-          <div className="container flex flex-col lg:flex-row justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:justify-between">
-            {/* Text Section */}
-            <div className="flex flex-col justify-center p-6 text-center lg:max-w-md xl:max-w-lg lg:text-left">
-              <button className="h-6 lg:-mt-40 mt-5 w-32 uppercase bg-white rounded-3xl text-purple-700">
-                Testimonial
-              </button>
-
-              <div className="lg:w-[750px] md:w-[450px] w-[320px] md:ml-32 lg:ml-0 mt-4 lg:mt-0">
-                <p className="lg:text-5xl md:text-4xl text-2xl my-4 text-[#fff]">
-                  Customer Review
-                </p>
-              </div>
-
-              <div className="flex gap-6">
-                {/* Total Review Section */}
-                <div>
-                  <p className="my-6">Total Review</p>
-                  <div className="flex gap-2 items-center">
-                    <h1 className="lg:text-5xl md:text-4xl text-2xl">122 K</h1>
-                    <button className="bg-blue-800 -mt-3 my-6 w-20 h-6 text-white font-semibold rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center space-x-2">
-                      <span>24%</span>
-                      <BiUpArrowCircle className="text-lg md:text-xl" />
-                    </button>
-                  </div>
-                  <p className="my-6">Pulvinar commodo arcu</p>
-                </div>
-
-                {/* Average Rating Section */}
-                <div>
-                  <p className="my-6">Average Rating</p>
-                  <div className="flex gap-2 items-center">
-                    <h1 className="lg:text-5xl md:text-4xl text-2xl">4.8</h1>
-                    <div className="flex gap-1 -mt-3 my-6">
-                      <IoIosStar className="text-purple-400 text-xl" />
-                      <IoIosStar className="text-purple-400 text-xl" />
-                      <IoIosStar className="text-purple-400 text-xl" />
-                      <IoIosStar className="text-purple-400 text-xl" />
-                      <FaStarHalfAlt className="text-purple-400 text-xl" />
-                    </div>
-                  </div>
-                  <p className="my-6">Pulvinar commodo arcu</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Image Section */}
-            <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-[28rem] 2xl:h-[32rem]">
-              {/* <Image
-                src="https://via.placeholder.com/500"
-                alt="Customer review logo"
-                className="object-contain h-72 sm:h-80 lg:h-96 w-auto rounded-2xl"
-              /> */}
-              <img
-                src="https://via.placeholder.com/800x500"
-                alt="Customer review logo"
-                className="object-contain h-72 sm:h-80 lg:h-96 w-auto rounded-2xl"
-              />
-            </div>
-          </div>
-          <div className="bg-blue-600 border-b border-gray-300"></div>
-        </div>
-      </div>
+      <CustomerReview />
+      {/* What Our Member Say About Us? */}
+      <OurMember />
+      {/* Our Member */}
+      <ScheduleFreeConsultation />
     </section>
   );
 };
 
 export default TheService;
-
-{
-  /* <div className="relative">
-        <div className="container z-10 mx-auto flex flex-col justify-center sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-          <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <div className="lg:w-[750px] md:w-[450px] w-[320px]  lg:ml-0 ml-0 md:ml-32 lg:mt-0 md:mt-8 mt-0">
-              <span
-                style={{
-                  fontWeight: "700",
-                  lineHeight: "120%",
-                }}
-                className="lg:text-5xl md:text-4xl text-2xl my-4 "
-              >
-                Get a Free Goggle
-                <br />
-                <span className="ads-audit">Ads Audit</span>
-                <span> in seconds</span>
-              </span>
-            </div>
-
-            <p className="my-8 lg:text-base text-sm ">
-              Start exploring the world of digital art and NFTs today and take
-              control of your digital assets with confidence! Copy
-            </p>
-            <div className="flex lg:ml-0 ml-0 md:ml-44 gap-5">
-              <button
-                style={{
-                  background:
-                    "linear-gradient(90deg, #1A43A3 0%, #E025CE 100%)",
-                }}
-                className="uppercase h-10 w-32 lg:h-12 lg:w-40 rounded-lg text-sm "
-              >
-                <span>Adit Now</span>
-              </button>
-              <button className="cursor-pointer px-10 rounded-lg text-[#fff] text-sm ">
-                Learn More
-              </button>
-            </div>
-          </div>
-          <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-[28rem] 2xl:h-[32rem]">
-            <Image
-              src="/section-image.png"
-              alt="section-image.png"
-              height={1000}
-              width={1000}
-              className="object-contain w-[500px] h-[500px] z-10"
-            />
-          </div>
-        </div>
-
-        <div className="absolute top-0 -left-32 lg:-left-20 z-0 overflow-hidden  ">
-          <Image
-            src="/ads-audit-bg-1.png"
-            alt="section-image.png"
-            height={1000}
-            width={1000}
-            className="object-contain w-[300px] h-[500px] "
-          />
-        </div>
-        <div className="absolute -bottom-14 -right-28 z-0 overflow-hidden hidden lg:flex">
-          <Image
-            src="/ads-audit-bg-2.png"
-            alt="section-image.png"
-            height={1000}
-            width={1000}
-            className="object-contain w-[979px] h-[540px] "
-          />
-        </div>
-
-        <div className="orient absolute -bottom-1/2  "></div>
-        <div className="background-blur  absolute bottom-0 right-0  "></div>
-      </div> */
-}
