@@ -44,6 +44,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Navbar className="bg-transparent shadow-none" />
+        <Navbar className="bg-transparent shadow-none" />
         {children}
         <Footer />
       </body>
