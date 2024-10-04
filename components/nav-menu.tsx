@@ -1,45 +1,28 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
+const navlist = [
+  { href: "/", label: "Home" },
+  { href: "/#service", label: "Service" },
+  { href: "/#portfolio", label: "Portfolio" },
+  { href: "/#blog", label: "Blog" },
+  { href: "/#about-us", label: "About Us" },
+  { href: "/#contact-us", label: "Contact Us" },
+];
+
 const NavMenu = ({ className }: any) => {
   return (
     <div className={cn("flex items-center gap-9", className)}>
-      <Link
-        href="/"
-        className="cursor-pointer text-base hover:border-b-[3px] border-blue-500"
-      >
-        Home
-      </Link>
-      <Link
-        href="/#service"
-        className="cursor-pointer text-base  hover:border-b-[3px] border-blue-500"
-      >
-        Service
-      </Link>
-      <Link
-        href="/#portfolio"
-        className="cursor-pointer text-base hover:border-b-[3px] border-blue-500 "
-      >
-        Portfolio
-      </Link>
-      <Link
-        href="/#blog"
-        className="cursor-pointer text-base hover:border-b-[3px] border-blue-500"
-      >
-        Blog
-      </Link>
-      <Link
-        href="/#about-us"
-        className="cursor-pointer text-base hover:border-b-[3px] border-blue-500"
-      >
-        About Us
-      </Link>
-      <Link
-        href="/#contact-us"
-        className="cursor-pointer text-base hover:border-b-[3px] border-blue-500"
-      >
-        Contact Us
-      </Link>
+      {navlist.map((item) => (
+        <Link
+          key={item.href}
+          href={item.href}
+          className="cursor-pointer text-base group relative"
+        >
+          {item.label}
+          <span className="absolute left-0 bottom-[-10px] h-1 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </Link>
+      ))}
     </div>
   );
 };

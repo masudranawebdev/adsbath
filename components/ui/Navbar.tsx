@@ -1,8 +1,10 @@
+"use client";
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import NavMenu from "../nav-menu";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 const Navbar = ({
   className,
@@ -11,8 +13,31 @@ const Navbar = ({
   className?: string;
   props?: any;
 }) => {
+  const [isScroll, setIsScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScroll(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className={cn("bg-[#040710] text-white py-2 sticky top-0 z-[500] shadow-2xl shadow-[#040710]",className)}>
+    <nav
+      className={cn(
+        `text-white py-2 sticky top-0 z-[500] shadow-2xl  ${
+          isScroll
+            ? "bg-[#040710] shadow-[#040710]"
+            : "bg-transparent shadow-none"
+        }`,
+        className
+      )}
+    >
       <div className="container mx-auto flex justify-between items-center">
         <Link href={"/"}>
           <Image
