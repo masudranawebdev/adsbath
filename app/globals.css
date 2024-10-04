@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @layer base {
   :root {
     --background: #040710;
@@ -73,7 +79,7 @@
 }
 
 body {
-  background-color: #040710;
+  background-color: #0f1320;
   color: white;
 }
 
@@ -210,7 +216,6 @@ body {
     rgba(16, 24, 40, 0.3) 15.94%,
     rgba(224, 37, 206, 0.3) 100%
   );
-  
 }
 
 @media (max-width: 500px) {

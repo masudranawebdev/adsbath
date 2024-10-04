@@ -7,12 +7,57 @@ import OurMember from "./our-member";
 import CustomerReview from "./customer-review";
 import WhyChooseUs from "./why-choose-us";
 import dynamic from "next/dynamic";
+import AuditBgImage1 from "../../assets/images/audit-bg-left.png";
+import AuditBgImage2 from "../../assets/images/audit-bg-right.png";
+import AuditImage from "../../assets/images/audit-image.png";
 
 const CardCarousel = dynamic(() => import("../card-carousel"), { ssr: false });
 
 const TheService = () => {
+  // console.log(AuditBgImage1, AuditBgImage2, AuditImage);
+
   return (
-    <section className="relative bg-[#0f1320] overflow-hidden">
+    <section className="relative bg-[] overflow-hidden">
+      <div className="w-full relative my-20">
+        <div className="container flex justify-between items-center h-full">
+          <div className="w-[40%]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl leading-9">
+              Get a Free Google
+              <br />
+              <span className="font-bold service-text bg-clip-text text-transparent bg-gradient-to-r from-[#504cff] to-[#e025ce] mr-2">
+                Ads Audit
+              </span>
+              in seconds
+            </h1>
+            <p className="mt-4">
+              Start exploring the world of digital art and NFTs today and take
+              control of your digital assets with confidence!
+            </p>
+          </div>
+          <Image
+            src={AuditImage}
+            height={600}
+            width={600}
+            alt=""
+            className="h-[500px]"
+          />
+        </div>
+        <Image
+          src={AuditBgImage1}
+          height={200}
+          width={300}
+          alt=""
+          className="absolute left-0 top-0 h-[400px] w-[200px]"
+        />
+        <Image
+          src={AuditBgImage2}
+          height={700}
+          width={1000}
+          alt=""
+          className="absolute right-0 top-0"
+        />
+      </div>
+
       {/* The Service We ProvideFor You */}
       <div id="service">
         {/* Title  */}
