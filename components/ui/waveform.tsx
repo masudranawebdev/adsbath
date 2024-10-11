@@ -14,9 +14,9 @@ const Waveform = ({ className }: { className: string }) => {
           id="Vector"
           d="M13 7.0001H10.6L8.8 12.4001L5.2 1.6001L3.4 7.0001H1"
           stroke="#FEF6FB"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>

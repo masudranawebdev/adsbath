@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { PiArrowCircleUpRight } from "react-icons/pi";
 import { services } from "@/lib/data";
-// import CardCarousel from "../card-carousel";
 import ScheduleFreeConsultation from "./schedule-a-free-consultation";
 import OurMember from "./our-member";
 import CustomerReview from "./customer-review";
@@ -14,10 +13,9 @@ import AuditImage from "../../assets/images/audit-image.png";
 const CardCarousel = dynamic(() => import("../card-carousel"), { ssr: false });
 
 const TheService = () => {
-  // console.log(AuditBgImage1, AuditBgImage2, AuditImage);
-
   return (
-    <section className="relative bg-[] overflow-hidden">
+    <section className="relative overflow-hidden">
+      {/* hero-section */}
       <div className="w-full relative my-20">
         <div className="container flex justify-between items-center h-full">
           <div className="w-[40%]">
@@ -87,8 +85,7 @@ const TheService = () => {
         {/*  */}
       </div>
 
-      {/* Behind the Scenes: Our Process
-for Digital Dominance */}
+      {/* Behind the Scenes: Our Process for Digital Dominance */}
       <div className="relative pb-7">
         <div className="container mx-auto items-center justify-center flex flex-col">
           <h1 className="service-hading text-center lg:text-[60px] md:text-4xl text-2xl my-4">
